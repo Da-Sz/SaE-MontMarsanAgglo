@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+nav li {
+    display: inline;
+}
+
+#logo_accueil {
+    display: block;
+}
