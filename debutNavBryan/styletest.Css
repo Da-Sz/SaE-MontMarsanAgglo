@@ -26,7 +26,7 @@ nav {
     justify-content: center;
     background-color: #608ca4;
     box-shadow: #959595 0px 5px 5px -2px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 
 nav ul {
@@ -142,3 +142,83 @@ nav ul li:hover {
 
 }
 /* Seulement pour l'agglo à part -> enlever pour agglo normal */
+
+
+
+.actuContainer {
+    aborder: 1px solid red;
+    display: flex;
+
+}
+
+.actuContainer img {
+    height: 200px;
+    width: 200px;
+
+}
+
+
+.actus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2,2fr);
+    margin-bottom: 40px;
+}
+
+.texte {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 0px 30px 0px 15px;
+}
+
+.texte p {
+    text-align: justify;
+}
+
+.texte a {
+    align-self: center;
+     padding: 0.6em 1.5em;
+     margin : 20px 0 0 0;
+     border : 1px solid #F97F0F;
+     background-color: #F97F0F;
+     color: white;
+}
+
+.texte a:hover {
+    background-color: white;
+    color: #F97F0F;
+}
+
+
+.titreActualité {
+    font-size: 3em;
+    width: 300px;
+    background-color: #085c84;
+    color: white;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+
+@media (max-width: 1460px) { 
+
+    .actuContainer {
+        flex-direction: column;
+    }
+
+    .actus {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .titreActualité {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+}
