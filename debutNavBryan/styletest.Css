@@ -15,7 +15,7 @@ body {
 }
 .pagePrincipale {
     width: 1140px;
-    height: 800px;
+    height: 1500px;
     border : 1px solid black;
     margin: auto;
 }
@@ -192,7 +192,7 @@ nav ul li:hover {
 }
 
 
-.titreActualité {
+.titreSection {
     font-size: 3em;
     width: 300px;
     background-color: #085c84;
@@ -206,7 +206,7 @@ nav ul li:hover {
 @media (max-width: 1460px) { 
 
     .actuContainer {
-        grid-template-columns: repeat(2,2fr);;
+        grid-template-columns: repeat(2,2fr);
     }
 
     .actus {
@@ -221,4 +221,30 @@ nav ul li:hover {
         margin-bottom: 30px;
     }
 
+}
+
+
+.découvrir {
+    display: flex;
+    justify-content: center;
+}
+.liens img {
+    width: 400px;
+    height: auto;
+    transition: all 0.5s;
+}
+.liens {
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    column-gap: 1em;
+    row-gap: 1em;
+}
+.liens img:hover {
+    transform: scale(1.3);
+    z-index: 2;
+    transition: all 0.5s;
+}
+
+.liens a {
+    display: block;
 }
