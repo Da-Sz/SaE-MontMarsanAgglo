@@ -14,7 +14,7 @@ body {
     background-color: #edecec;
 }
 .pagePrincipale {
-    width: 65%;
+    width: 1140px;
     height: 800px;
     border : 1px solid black;
     margin: auto;
@@ -135,7 +135,6 @@ nav ul li:hover {
         background-color: #085c84;
     }
     
-    
     nav ul {
         display: flex;
     }
@@ -147,7 +146,8 @@ nav ul li:hover {
 
 .actuContainer {
     aborder: 1px solid red;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
 
 }
 
@@ -206,7 +206,7 @@ nav ul li:hover {
 @media (max-width: 1460px) { 
 
     .actuContainer {
-        flex-direction: column;
+        grid-template-columns: repeat(2,2fr);;
     }
 
     .actus {
