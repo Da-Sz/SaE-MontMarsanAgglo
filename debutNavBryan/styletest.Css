@@ -14,10 +14,15 @@ body {
     background-color: #edecec;
 }
 .pagePrincipale {
-    width: 1140px;
-    height: 1500px;
+    
     border : 1px solid black;
+    
+}
+
+section {
+    border: 1px solid yellow;
     margin: auto;
+    width: 1140px;
 }
 
 nav {
@@ -194,7 +199,7 @@ nav ul li:hover {
 
 .titreSection {
     font-size: 3em;
-    width: 300px;
+
     background-color: #085c84;
     color: white;
     margin-bottom: 30px;
@@ -247,4 +252,33 @@ nav ul li:hover {
 
 .liens a {
     display: block;
+}
+
+
+.sectionContainerActu {
+    background-color: #C4D7E0;
+}
+.sectionContainerDecouvrir {
+    background-color: #B2C8DF;
+}
+
+* {
+    border : 0!important;
+}
+
+
+.youtube {
+    margin-left: 2em;
+}
+.reseaux {
+    padding: 0 1.3em;
+    background-color: #5F6F94;
+}
+
+.reseaux:hover {
+    background-color: #edecec;
+}
+.reseaux img{
+    height: 50px;
+
 }
