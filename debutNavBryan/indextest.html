@@ -15,7 +15,7 @@
         <a href=""> <img src="./logoMarsan.png" alt=""></a>
     </div>
   </div>
-  <nav >
+  <nav id="nav">
 
     <ul class="oui">
       <li class="agglo drop"><a href="#" >L'AGGLO ˅</a>
@@ -145,3 +145,14 @@
 
 </body>
 </html>
+
+<script>
+  window.onscroll = function() {
+    let nav = document.getElementById('nav');
+    let bool = true;
+    if (nav.scrolltop() == 0) {
+      alert("oui")
+    }
+
+  }
+</script>

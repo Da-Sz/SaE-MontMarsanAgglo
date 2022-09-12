@@ -32,7 +32,13 @@ nav {
     background-color: #608ca4;
     box-shadow: #959595 0px 5px 5px -2px;
     margin-bottom: 60px;
+    position: sticky;
+    top: 0px;
+
+
 }
+
+
 
 nav ul {
     display: flex;
@@ -225,6 +231,11 @@ nav ul li:hover {
         margin: auto;
         margin-bottom: 30px;
     }
+
+    section {
+        width: 800px;
+    }
+
 
 }
 

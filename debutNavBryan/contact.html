@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+    <link href="css/styleBuilt.css" rel="stylesheet">
+    <link href="styletest.css" rel="stylesheet">
+    <link href="styleContact.css" rel="stylesheet">
+</head>
+<body>
+
+<!--DEBUT HEADER-->
+  <div class="imageVille">
+    <div class="logo">
+        <a href=""> <img src="./logoMarsan.png" alt=""></a>
+    </div>
+  </div>
+  <nav >
+
+    <ul class="oui">
+      <li class="agglo drop"><a href="#" >L'AGGLO ˅</a>
+        <div class="dropdown-content dropGreen">
+          <a href="#">Outils de planification</a>
+          <a href="#">Grands projets structurants</a>
+          <a href="#">Infrastructures performantes</a>
+          <a href="#">Territoire Cyber</a>
+          <a href="#">Enquête publique</a>
+       </div>
+      </li>
+      <li class="drop"><a href="#"  >COMPÉTENCES ˅</a> 
+        <div class="dropdown-content">
+            <a href="#">Action sociale</a>
+            <a href="#">Voirie</a>
+            <a href="#">Aménagement</a>
+            <a href="#">Culture</a>
+            <a href="#">Transports</a>
+            <a href="#">Economie</a>
+            <a href="#">Cadre de vie</a>
+            <a href="#">Unité culinaire</a>
+            <a href="#">Habitat</a>
+        </div></li>
+      <li class="drop"><a href="#" >DEMAIN ˅</a>
+         <div class="dropdown-content">
+            <a href="#">Outils de planification</a>
+            <a href="#">Grands projets structurants</a>
+            <a href="#">Infrastructures performantes</a>
+            <a href="#">Territoire Cyber</a>
+            <a href="#">Enquête publique</a>
+         </div></li>
+      <li class="drop"><a href="#"  >ACTUALITÉ ˅</a>
+        <div class="dropdown-content">
+          <a href="#">Archives 2011</a>
+          <a href="#">Archives 2012</a>
+          <a href="#">Archives 2013</a>
+          <a href="#">Archives 2014</a>
+          <a href="#">Archives 2015</a>
+       </div>
+      </li>
+      <li class="drop"><a href="#">S'INFORMER ˅</a>
+        <div class="dropdown-content">
+          <a href="#">Parcours santé</a>
+          <a href="#">Journal</a>
+          <a href="#">Infos utiles</a>
+          <a href="#">Accessibilité</a>
+          <a href="#">Publications</a>
+       </div>
+      </li>
+    </ul>
+
+    <a href="#" class="reseaux youtube"><img src="./images/youtube.png" alt="" ></a>
+    <a href="#" class="reseaux"><img src="./images/instagram.png" alt="" ></a>
+
+</nav>
+<!--FIN HEADER-->
+
+
+
+  <div class="pagePrincipale">
+
+
+
+    <div class="sectionContainerActu">
+      <section class="sectionContact">
+        <h2 class="titreSection">Nous contacter</h2>
+
+        <h3 class=>Nous rencontrer </h3>
+
+        <div class="texteEtMap">
+          <div class="adresse">
+            <h4>Adresse :</h4>
+            <p>575, Av Maréchal Foch <br>
+              BP 70171<br>
+              40003 Mont de Marsan<br>
+              Tel. : 05 58 46 64 10</p>
+          </div>
+  
+  
+          <div class="mapGoogle">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2875.03221327567!2d-0.4934687497636718!3d43.896599544574215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55d1031219c963%3A0x26dd49ae921b914f!2s575%20Av.%20du%20Mar%C3%A9chal%20Foch%2C%2040000%20Mont-de-Marsan!5e0!3m2!1sfr!2sfr!4v1662989404741!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        
+       
+      </section>
+    </div>
+
+
+
+
+    <div class="sectionContainerActu">
+      <section class="sectionContact">
+
+        <button id="bouton" class="open-button" onclick="openForm()">Nous écrire</button>
+        <div class="formulaire_popup" id ="myform">
+            <form action="#" method="POST" class="formulaire_container">
+                
+                <button type="button" class="btn_cancel2" onclick="closeForm()">Annuler</button>
+
+                <h1>Contactez nous</h1>
+
+                <label for="email">Nom</label>
+                <input type="text" placeholder="Jean Dupont" name="text" required>
+
+                <label for="email">Email</label>
+                <input type="email" placeholder="jean.dupont@gmail.com" name="email" required>
+
+                <label for="commentaire">Commentaire</label>
+                <textarea rows = "5" cols = "40" name = "description" placeholder="Votre Commentaire"></textarea>
+
+                <button type="submit" class="btn">Envoyer !</button>
+                
+            </form>
+        </div>
+
+      </div>
+
+
+        
+       
+      </section>
+    </div>
+    
+
+
+
+
+
+
+  </div>
+  
+
+</body>
+</html>
+
+<script>
+    function openForm() {
+        document.getElementById("myform").style.display = "block";
+    }
+
+    function closeForm() {
+        document.getElementById("myform").style.display = "none";
+    }
+</script>
