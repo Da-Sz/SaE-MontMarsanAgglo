@@ -67,7 +67,7 @@ nav ul li:hover {
 
 .imageVille {
     height: 300px;
-    background-image: url("./testUn.jpg");
+    background-image: url("./images/testUn.jpg");
     display: flex;
     justify-content: center;
     align-items: center;

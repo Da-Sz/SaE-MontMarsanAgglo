@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto Condensed"
+      rel="stylesheet"
+    />
+    <link href="css/styleBuilt.css" rel="stylesheet" />
+    <link href="styletest.css" rel="stylesheet" />
+    <link href="styleContact.css" rel="stylesheet" />
+    <link href="styleCarte.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin=""
+    ></script>
+  </head>
+  <body>
+    <!--DEBUT HEADER-->
+    <div class="imageVille">
+      <div class="logo">
+        <a href=""> <img src="./logoMarsan.png" alt="" /></a>
+      </div>
+    </div>
+    <nav>
+      <ul class="oui">
+        <li class="agglo drop">
+          <a href="#">L'AGGLO ˅</a>
+          <div class="dropdown-content dropGreen">
+            <a href="#">Outils de planification</a>
+            <a href="#">Grands projets structurants</a>
+            <a href="#">Infrastructures performantes</a>
+            <a href="#">Territoire Cyber</a>
+            <a href="#">Enquête publique</a>
+          </div>
+        </li>
+        <li class="drop">
+          <a href="#">COMPÉTENCES ˅</a>
+          <div class="dropdown-content">
+            <a href="#">Action sociale</a>
+            <a href="#">Voirie</a>
+            <a href="#">Aménagement</a>
+            <a href="#">Culture</a>
+            <a href="#">Transports</a>
+            <a href="#">Economie</a>
+            <a href="#">Cadre de vie</a>
+            <a href="#">Unité culinaire</a>
+            <a href="#">Habitat</a>
+          </div>
+        </li>
+        <li class="drop">
+          <a href="#">DEMAIN ˅</a>
+          <div class="dropdown-content">
+            <a href="#">Outils de planification</a>
+            <a href="#">Grands projets structurants</a>
+            <a href="#">Infrastructures performantes</a>
+            <a href="#">Territoire Cyber</a>
+            <a href="#">Enquête publique</a>
+          </div>
+        </li>
+        <li class="drop">
+          <a href="#">ACTUALITÉ ˅</a>
+          <div class="dropdown-content">
+            <a href="#">Archives 2011</a>
+            <a href="#">Archives 2012</a>
+            <a href="#">Archives 2013</a>
+            <a href="#">Archives 2014</a>
+            <a href="#">Archives 2015</a>
+          </div>
+        </li>
+        <li class="drop">
+          <a href="#">S'INFORMER ˅</a>
+          <div class="dropdown-content">
+            <a href="#">Parcours santé</a>
+            <a href="#">Journal</a>
+            <a href="#">Infos utiles</a>
+            <a href="#">Accessibilité</a>
+            <a href="#">Publications</a>
+          </div>
+        </li>
+      </ul>
+
+      <a href="#" class="reseaux youtube"
+        ><img src="./images/youtube.png" alt=""
+      /></a>
+      <a href="#" class="reseaux"
+        ><img src="./images/instagram.png" alt=""
+      /></a>
+    </nav>
+    <!--FIN HEADER-->
+
+    <div class="pagePrincipale">
+      <div class="sectionContainerActu">
+        <section class="sectionCarte">
+          <h2 class="titreSection">Carte intéractive</h2>
+          <div class="mapContainer">
+            <div id="map"></div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="./scriptMap.js"></script>
+  </body>
+</html>
