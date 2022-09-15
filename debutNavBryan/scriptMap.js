@@ -1,14 +1,15 @@
 
-var map = L.map("map").setView([43.9112, -0.4913], 11);
+var map = L.map("map", {zoomControl:false, scrollWheelZoom: false, attributionControl: false}).setView([43.9112, -0.4913], 11);
+map.dragging.disable();
+// var tiles = L.tileLayer(
+//   "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+//   {
+//     maxZoom: 19,
+//     attribution:
+//       '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+//   }
+// ).addTo(map);
 
-var tiles = L.tileLayer(
-  "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
-  {
-    maxZoom: 19,
-    attribution:
-      '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-  }
-).addTo(map);
 
 let statesData = {
   type: "FeatureCollection",
@@ -7013,7 +7014,7 @@ function onEachFeature(feature, layer) {
   layer.on({
     mouseover: highlightFeature,
     mouseout: resetHighlight,
-    click: zoomToFeature,
+    //click: zoomToFeature,
   });
 }
 
@@ -7044,3 +7045,5 @@ info.update = function (props) {
 };
 
 info.addTo(map);
+
+

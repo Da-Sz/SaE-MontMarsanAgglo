@@ -25,3 +25,9 @@ z-index: 3000;
     margin: 0 0 5px;
     color: #777;
 }
+
+
+#map {
+    background-color: transparent;
+}
+
