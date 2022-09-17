@@ -9,16 +9,28 @@
     />
     <link href="./css/styleBuilt.css" rel="stylesheet" />
     <link href="./css/styletest.css" rel="stylesheet" />
-    <link rel="icon" href="./favicon-agglo.jpg">
+    <link href="./css/styleContact.css" rel="stylesheet" />
+    <link href="./css/styleCarte.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin=""
+    ></script>
   </head>
   <body>
     <!--DEBUT HEADER-->
     <div class="imageVille">
       <div class="logo">
-        <a href=""> <img src="./images/logoMarsan.png" alt="" /></a>
+        <a href=""> <img src="./logoMarsan.png" alt="" /></a>
       </div>
     </div>
-    <nav id="nav">
+    <nav>
       <ul class="oui">
         <li class="agglo drop">
           <a href="#">L'AGGLO ˅</a>
@@ -76,71 +88,26 @@
         </li>
       </ul>
 
+      <a href="#" class="reseaux youtube"
+        ><img src="./images/youtube.png" alt=""
+      /></a>
+      <a href="#" class="reseaux"
+        ><img src="./images/instagram.png" alt=""
+      /></a>
     </nav>
     <!--FIN HEADER-->
 
     <div class="pagePrincipale">
       <div class="sectionContainerActu">
-        <section class="sectionActu">
-          <h2 class="titreSection">Actualités</h2>
-          <div class="actuContainer">
-            <div class="actus">
-              <img src="./images/actu1.png" alt="" />
-              <div class="texte">
-                <p>
-                  EEn lien avec le CIAS du Marsan, la Mutualité Française Landes
-                  propose une action de prévention à destination des aidants
-                  intitulée « Aidants, votre santé, parlons-en »...
-                </p>
-                <a href="#">Voir plus</a>
-              </div>
-            </div>
-
-            <div class="actus">
-              <img src="./images/actu2.png" alt="" />
-              <div class="texte">
-                <p>
-                  En partenariat avec l'ASEPT - l'Association de Santé, d'É
-                  ducation et de Prévention sur les Territoires sud aquitaine -
-                  le CIAS du Marsan organise un
-                </p>
-                <a href="#">Voir plus</a>
-              </div>
-            </div>
-
-            <div class="actus">
-              <img src="./images/actu3.png" alt="" />
-              <div class="texte">
-                <p>
-                  Pour la session 2022-2023 qui débutera le 2 novembre prochain,
-                  Mont de Marsan Agglo recherche des volontaires en Service
-                  Civique afin...
-                </p>
-                <a href="#">Voir plus</a>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-
-      <div class="sectionContainerDecouvrir">
-        <section class="sectionDecouvrir">
-          <h2 class="titreSection">Découvrir</h2>
-
-          <div class="découvrir">
-            <div class="liens">
-              <a href="#"><img src="./images/endroit1.jpg" alt="" /></a>
-              <a href="#"><img src="./images/endroit2.jpg" alt="" /></a>
-              <a href="#"><img src="./images/endroit3.jpg" alt="" /></a>
-              <a href="#"><img src="./images/endroit4.jpg" alt="" /></a>
-              <a href="#"><img src="./images/endroit5.jpg" alt="" /></a>
-              <a href="#"><img src="./images/endroit6.jpg" alt="" /></a>
-            </div>
+        <section class="sectionCarte">
+          <h2 class="titreSection">Carte intéractive</h2>
+          <div class="mapContainer">
+            <div id="map"></div>
           </div>
         </section>
       </div>
     </div>
+
+    <script src="./scriptMap.js"></script>
   </body>
 </html>
-
-<script></script>
