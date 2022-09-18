@@ -1,5 +1,5 @@
 
-var map = L.map("map", {zoomControl:false, scrollWheelZoom: false, attributionControl: false}).setView([43.9112, -0.4913], 11);
+var map = L.map("map", { zoomControl: false, scrollWheelZoom: false, attributionControl: false }).setView([43.9112, -0.4913], 11);
 map.dragging.disable();
 // var tiles = L.tileLayer(
 //   "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
@@ -6954,24 +6954,24 @@ function getColor(d) {
   return d > 25000
     ? "#800026"
     : d > 15000
-    ? "#BD0026"
-    : d > 10000
-    ? "#E31A1C"
-    : d > 5000
-    ? "#FC4E2A"
-    : d > 1000
-    ? "#FD8D3C"
-    : d > 500
-    ? "#FEB24C"
-    : d > 200
-    ? "#FED976"
-    : "#FFEDA0";
+      ? "#BD0026"
+      : d > 10000
+        ? "#E31A1C"
+        : d > 5000
+          ? "#FC4E2A"
+          : d > 1000
+            ? "#FD8D3C"
+            : d > 500
+              ? "#FEB24C"
+              : d > 200
+                ? "#FED976"
+                : "#FFEDA0";
 }
 
 function style(feature) {
   return {
     fillColor: getColor(feature.properties.population),
-    weight: 2,
+    weight: 4,
     opacity: 1,
     color: "white",
     dashArray: "3",
@@ -7036,10 +7036,10 @@ info.update = function (props) {
   this._div.innerHTML =
     "<h4>Nom de l'agglomération</h4>" +
     (props
-      ? "<b>" + props.nom + "</b><br/>" + 
+      ? "<b>" + props.nom + "</b><br/>" +
       "Population : " + props.population + "<br/>" +
-      "Code Postal : " + props.codesPostaux[0] + "<br/>" + 
-      "Superficie : " + (props.surface/100).toPrecision(3) + "km²"
+      "Code Postal : " + props.codesPostaux[0] + "<br/>" +
+      "Superficie : " + (props.surface / 100).toPrecision(3) + "km²"
       : "Survoler une agglomération");
 };
 

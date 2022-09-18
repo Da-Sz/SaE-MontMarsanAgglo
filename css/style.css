@@ -1,38 +1,329 @@
 * {
-    color : darkblue;
     padding: 0%;
     margin: 0%;
     font-family: 'Roboto Condensed', sans-serif;
     text-decoration: none;
     list-style: none;
-}
-
-* {
-    border : 0!important;
+    border: 0 important;
 }
 
 
-body {
-}
+
+
 .pagePrincipale {
-    border : 1px solid black;
+    baorder: 1px solid black;
+}
+
+
+.titreSection {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
 }
 
 
 
-/* ----------------------------- */
+.titreSection::before {
+    background-image: url(../images/26432.png);
+    background-size: 2em;
+    height: 1rem;
+    width: 100%;
+    content: '';
+    left: 0;
+    bottom: 1.7em;
+    position: absolute;
+    box-sizing: inherit;
+    color: inherit;
+
+}
+
+.titreSection h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: 4rem;
+    padding: 0 2rem;
+    position: relative;
+    background-color: white;
+}
 
 
 
 
+.grosseImageContainer {
+
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.grosseImageContainer img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    object-fit: cover;
+    margin: auto;
+    display: block;
+    overflow: hidden;
+}
+
+
+
+.carreTexte {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 6rem;
+    width: 300px;
+    background-color: #1e7495;
+    border: 2rem solid white;
+    color: white;
+    position: relative;
+    margin: 0;
+    margin-left: -17rem;
+    margin-right: -2rem;
+    min-width: 300px;
+    transition: all 0.5s;
+
+}
+
+
+.carreTexte .sousTitre {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0 0 0 0;
+    text-transform: uppercase;
+}
+
+.carreTexte .titre {
+
+    font-size: 35px;
+    font-weight: 100;
+    line-height: 3.7rem;
+    margin: 0 0 10px;
+}
+
+.flexContainerUn {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 100px 0;
+    width: fit-content;
+    margin: 50px auto 30px auto;
+}
+
+.grosseImageContainer:hover .carreTexte {
+    background-color: #960051;
+    cursor: pointer;
+}
+
+
+
+section {
+    padding-bottom: 30px;
+    width: 100%;
+    max-width: 1500px;
+    aborder: 2px solid red;
+    margin: auto;
+}
+
+.newsBoxAccueil img {
+    width: 275px;
+    height: 275px;
+}
+
+.newsContent {
+    position: relative;
+    width: 200px;
+    background-color: white;
+    margin-top: -3rem;
+    padding: 1rem 1rem 0 2.2rem;
+    margin-left: -1.4em;
+    height: auto;
+
+}
+
+.newsBoxAccueil:hover {
+    text-decoration: underline;
+    filter: brightness(1.20);
+    filter: saturate(var(--value, 5));
+}
+
+.newsContent .title {
+    font-size: 1 rem;
+    font-weight: 200;
+    line-height: 1.2;
+}
+
+.newsList {
+    padding-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 5em;
+}
+
+.newsBoxAccueil {
+    display: inline-block;
+    color: black;
+    opacity: 1;
+    transition: all 1s;
+    justify-self: center;
+}
+
+
+.newsListAccueil {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    box-sizing: border-box;
+    width: 1400px;
+    margin: auto;
+}
+
+.allNewsButton {
+    padding: 1rem 2.1rem;
+    border: solid 1px rgba(197, 197, 197, .5);
+    font-size: 1rem;
+    font-weight: 700;
+    color: black;
+    margin: auto;
+    transition: 0.5s all;
+}
+
+.allNewsButton:hover {
+    color: white;
+    background-color: #1e7495;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (max-width : 1300px) {
+    .newsListAccueil {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 100px;
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .newsBoxAccueil img {
+        width: 380px;
+        height: 380px;
+    }
+
+
+    .newsContent {
+        width: 300px;
+    }
+
+    .carreTexte {
+        border-right: 0px;
+        margin-right: 0;
+    }
+
+}
+
+@media screen and (max-width : 800px) {
+    .newsListAccueil {
+        grid-template-columns: repeat(1, 2fr);
+        max-width: 80%;
+        margin: auto;
+    }
+
+    section {
+        max-width: 800px;
+        margin: auto;
+    }
+}
 
 
 
 
+.sectionDeux h2 {
+    background-color: #f0f0f0;
+    ;
+}
+
+
+.sectionDeuxContainer {
+    width: 100%;
+    background-color: #f0f0f0;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.sectionDeux {
+
+    width: 100%;
+    max-width: 1500px;
+    aborder: 2px solid red;
+    margin: auto;
+    background-color: #f0f0f0;
+}
 
 
 
 
+.svgContainer {
+    width: 75px;
+    height: 75px;
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    margin: 20px;
+    padding: 40px;
+    transition: all 1s;
+}
 
 
 
+.test {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 1px solid lightblue;
+    top: -15px;
+    right: -15px;
+    z-index: 10;
+    visibility: hidden;
+}
+
+.svgContainer:hover {
+    background-color: #1e7495;
+}
+
+.svgContainer:hover .test {
+    visibility: visible;
+}
+
+
+
+.carreQuotidien {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: fit-content;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+
+.carreGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    justify-items: center;
+}
+
+
+.sectionTrois {
+    padding-top: 20px;
+}
+
+
+.sectionUn {
+    background-image: url(../images/dessin.jpg);
+    background-position: 150% 10%;
+    background-repeat: no-repeat;
+    background-size: ;
+}

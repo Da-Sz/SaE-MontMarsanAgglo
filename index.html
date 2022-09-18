@@ -9,8 +9,20 @@
     />
     <title>Mont de Marsan | Agglo</title>
     <link href="./css/style.css" rel="stylesheet" />
-    <link href="./css/styleHeader.css" rel="stylesheet" >
-    <link rel="icon" href="./favicon-agglo.jpg">
+    <link href="./css/styleHeader.css" rel="stylesheet" />
+    <link rel="icon" href="./favicon-agglo.jpg" />
+    <link href="./css/styleCarte.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin=""
+    ></script>
   </head>
   <body>
     <!--DEBUT HEADER-->
@@ -76,15 +88,139 @@
           </div>
         </li>
       </ul>
-
     </nav>
     <!--FIN HEADER-->
 
     <div class="pagePrincipale">
+
+
+      <section class="sectionUn">
+        <div class="titreSection">
+          <h2>Actualités</h2>
+        </div>
+
+
+        <a href="#" class="flexContainerUn">
+          <div class="grosseImageContainer">
+            <img src="./images/testSectionDeux.jpg" alt="">
+            <div class="carreTexte">
+              <p class="sousTitre">Communauté</p>
+              <h3 class="titre">Actualité importante</h3>
+              <p class="contenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non nisi vel sem pulvinar volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras hendrerit ultrices lobortis. Quisque dictum tempor turpis, eget pharetra ex bibendum sed. Ut semper ultricies lectus sit amet ullamcorper.</p>
+            </div>
+          </div>
+        </a>
+
+
+        <div class="newsListAccueil">
+          
+          <a href="" class="newsBoxAccueil">
+            <img src="./images/actu3.png" alt="">
+            <div class="newsContent">
+              <h2 class="title">Titre de la news un peu plus grand que la normal</h2>
+            </div>
+          </a>
+
+          <a href="" class="newsBoxAccueil">
+            <img src="./images/actu3.png" alt="">
+            <div class="newsContent">
+              <h2 class="title">Titre de la news</h2>
+            </div>
+          </a>
+
+          <a href="" class="newsBoxAccueil">
+            <img src="./images/actu3.png" alt="">
+            <div class="newsContent">
+              <h2 class="title">Titre de la news</h2>
+            </div>
+          </a>
+
+          <a href="" class="newsBoxAccueil">
+            <img src="./images/actu3.png" alt="">
+            <div class="newsContent">
+              <h2 class="title">Titre de la news</h2>
+            </div>
+          </a>
+      </div>
+
+      <div class="buttonContainer">
+        <a href="#" class="allNewsButton">Toutes les actualités</a>
+      </div>
       
 
+
+      </section>
+
+      <!-- Section dans une div à cause de la couleur...à changer -->
+      <div class="sectionDeuxContainer">
+        <div class="sectionDeux">
+          <div class="titreSection">
+            <h2>Au quotidien</h2>
+          </div>
+  
+          
+          <div class="carreGrid">
+            <div class="carreQuotidien">
+              <div class="svgContainer">
+                <img src="./images/svg1.svg" class="svg "alt="">
+                <div class="test"></div>
+              </div>
+              <p>La Bibliothèque</p>
+            </div>
+
+            <div class="carreQuotidien">
+              <div class="svgContainer">
+                <img src="./images/svg2.svg" class="svg "alt="">
+                <div class="test"></div>
+              </div>
+              <p>Espace famille</p>
+            </div>
+
+            <div class="carreQuotidien">
+              <div class="svgContainer">
+                <img src="./images/svg3.svg" class="svg "alt="">
+                <div class="test"></div>
+              </div>
+              <p>Entreprendre</p>
+            </div>
+
+            <div class="carreQuotidien">
+              <div class="svgContainer">
+                <img src="./images/svg4.svg" class="svg "alt="">
+                <div class="test"></div>
+              </div>
+              <p>Le parc naturel</p>
+            </div>
+
+            <div class="carreQuotidien">
+              <div class="svgContainer">
+                <img src="./images/svg5.svg" class="svg "alt="">
+                <div class="test"></div>
+              </div>
+              <p>Le théâtre</p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <section class="sectionTrois">
+        <div class="titreSection">
+          <h2>La carte intéractive</h2>
+        </div>
+
+        <div id="map"></div>
+      </section>
+      
+      
     </div>
+
+
+    
   </body>
 </html>
 
-<script></script>
+<script src="./scriptMap.js"></script>
