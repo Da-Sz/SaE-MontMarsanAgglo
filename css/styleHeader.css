@@ -1,6 +1,11 @@
 /* HEADER START*/
 
-
+* {
+    list-style: none;
+    text-decoration: none;
+    color : black;
+    padding: 0;
+}
 nav {
     display: flex;
     testborder: 1px solid red;
@@ -98,6 +103,40 @@ nav ul li:hover {
     display: flex;
     align-items: center;
     text-decoration: underline;
+
 }
 
 /* HEADER END*/
+
+
+/* FOOTER START*/
+
+.footerContainer {
+    background-color: #64442c;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 150px 70px 150px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.footerContainer h3 {
+    padding-bottom: 0.7em;
+    margin-bottom: 1em;
+    border-bottom: 2px solid black;
+}
+
+.liste ul{
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width : 800px) {
+    .footerContainer {
+        flex-direction: column;
+    }
+}
+
+.adresse p{
+    line-height: 1.5em;
+}

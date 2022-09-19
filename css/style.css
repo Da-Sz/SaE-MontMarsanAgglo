@@ -205,6 +205,7 @@ section {
         row-gap: 100px;
         max-width: 80%;
         margin: auto;
+        margin-bottom: 2em;
     }
 
     .newsBoxAccueil img {
@@ -220,6 +221,29 @@ section {
     .carreTexte {
         border-right: 0px;
         margin-right: 0;
+    }
+
+    .titreSection::before {
+        background-image: url(../images/26432.png);
+        background-size: 2em;
+        height: 0.7rem;
+        width: 100%;
+        content: '';
+        left: 0;
+        bottom: 1.3em;
+        position: absolute;
+        box-sizing: inherit;
+        color: inherit;
+    
+    }
+    
+    .titreSection h2 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 800;
+        font-size: 3rem;
+        padding: 0 2rem;
+        position: relative;
+        background-color: white;
     }
 
 }

@@ -1,4 +1,5 @@
 .texteEtMap {
+    margin: 50px 0 50px 0;
     display: flex;
     justify-content: center;
 }
@@ -13,114 +14,9 @@
 }
 
 .mapGoogle iframe{
-    width: 500px;
-    height: 300px;
+    max-width: 600px;
+    height: auto;
 }
 
 
 /* CSS POUR FORMULAIRE */
-
-.open-button {
-    background-color: #555;
-    color: #FFF;
-    padding: 16px 20px;
-    border : none;
-    cursor: pointer;
-    opacity: 0.92;
-    position: fixed;
-    bottom : 20px;
-    right : 10px;
-    width : 20%;
-}
-
-.formulaire_popup {
-    display : none;
-    position : fixed;
-    bottom: 0;
-    right: 0;
-    border : 3px solid black;
-}
-
-.formulaire_container {
-    max-width: 400px;
-    padding: 10px;
-    background-color: #FFF;
-}
-
-.formulaire_container input[type=email], .formulaire_container input[type=text] {
-    width: 90%;
-    padding : 15px;
-    margin : 5px 0 22px 15px;
-    border : none;
-    background-color: #f1f1f1;
-    word-break: break-word;
-}
-
-.formulaire_container input[type=text] {
-    height: auto;
-    
-}
-
-.formulaire_container .btn {
-    background-color: green;
-    color : #FFF;
-    padding: 16px 20px;
-    border : none;
-    cursor: pointer;
-    width: 100%;
-    margin-bottom: 10px;
-    opacity: 0.8;
-}
-
-.formulaire_container .btn_cancel {
-    background-color: red;
-    color : #FFF;
-    padding: 16px 20px 16px 20px;
-    border : none;
-    cursor: pointer;
-    width: 100%;
-    margin-bottom: 10px;
-    opacity: 0.8;
-}
-
-
-.formulaire_container .btn:hover, .open-button:hover, .btn_cancel:hover {
-    opacity: 1.3;
-    color: darkblue;
-    font-weigaht: bold;
-
-}
-
-.btn_cancel2 {
-    margin-right: 2px;
-    padding: 3px 4px 3px 4px;
-    margin-left: 80%;
-    margin-bottom: -7px;
-    border : none;
-}
-.btn_cancel2:hover {
-    color : red;
-    background-color: darkgray;
-    margin-bottom: -7px;
-}
-
-
-textarea {
-    background-color: #f1f1f1;
-    padding: 15px;
-    border : none;
-    margin-bottom: 22px;
-    margin-left: 15px;
-    
-}
-
-
-label {
-    display : block;
-}
-
-
-.hautForm {
-    display: flex;
-    justify-content: space-between;
-}
