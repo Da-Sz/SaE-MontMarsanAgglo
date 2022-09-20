@@ -1,4 +1,3 @@
-
 var map = L.map("map", { zoomControl: false, scrollWheelZoom: false, attributionControl: false }).setView([43.9112, -0.4913], 11);
 map.dragging.disable();
 // var tiles = L.tileLayer(
@@ -6976,6 +6975,7 @@ function style(feature) {
     color: "white",
     dashArray: "3",
     fillOpacity: 0.7,
+    className: "testDeux"
   };
 }
 
@@ -6985,7 +6985,7 @@ function highlightFeature(e) {
   var layer = e.target;
 
   layer.setStyle({
-    weight: 5,
+    weight: 6,
     color: "#666",
     dashArray: "",
     fillOpacity: 0.7,
@@ -6994,12 +6994,30 @@ function highlightFeature(e) {
   if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
     layer.bringToFront();
   }
+
+  let villeStyle = document.getElementById(layer.feature.properties.nom)
+  villeStyle.style.color = 'red'
+
   info.update(layer.feature.properties);
+
 }
+
+
+function hoverListe(e) {
+  console.log(e.id)
+  let layerAChanger = document.getElementsByClassName('testDeux')[0]
+  layerAChanger.strokewidth = "8";
+  layerAChanger.style.strokewidth = "10";
+}
+
+
 
 function resetHighlight(e) {
   geojson.resetStyle(e.target);
   info.update();
+  let ville = document.getElementById(e.target.feature.properties.nom)
+  //console.log(ville)
+  ville.style.color = 'black'
 }
 
 var geojson;
@@ -7010,13 +7028,32 @@ function zoomToFeature(e) {
   map.fitBounds(e.target.getBounds());
 }
 
+let listeVille = document.getElementById('cityList');
 function onEachFeature(feature, layer) {
+
   layer.on({
     mouseover: highlightFeature,
     mouseout: resetHighlight,
-    //click: zoomToFeature,
+    //click: ouvrirLienSite,
+    //click: chargerClasses,
   });
+
+  let uneVille = document.createElement("li");
+  uneVille.setAttribute('id', feature.properties.nom)
+  uneVille.setAttribute('onmouseover', "hoverListe(this)")
+
+  uneVille.innerHTML = feature.properties.nom
+  listeVille.append(uneVille)
+
+
+
+
 }
+
+
+
+
+
 
 geojson = L.geoJson(statesData, {
   style: style,
@@ -7046,3 +7083,11 @@ info.update = function (props) {
 info.addTo(map);
 
 
+
+
+
+let layerAChanger = document.getElementsByClassName('testDeux')[0]
+layerAChanger.strokewidth = "8!important";
+layerAChanger.style.strokewidth = "10!important";
+layerAChanger.setAttribute('stroke-width', '10');
+console.log(layerAChanger.getAttribute('stroke'));
