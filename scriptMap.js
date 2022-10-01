@@ -127,6 +127,7 @@ function onEachFeature(feature, layer) {
 
 
 
+
 geojson = L.geoJson(statesData, {
   style: style,
   onEachFeature: onEachFeature,
@@ -164,4 +165,3 @@ window.onload = function() {
     .sort((a, b) => a.textContent.localeCompare(b.textContent))
     .forEach(li => ul.appendChild(li));
 }
-
