@@ -64,7 +64,8 @@ function highlightFeature(e) {
   }
 
   let villeStyle = document.getElementById(layer.feature.properties.nom)
-  villeStyle.style.backgroundColor ='#50C878';
+  villeStyle.style.backgroundColor ='#608ca4';
+  villeStyle.style.color ='white';
 
   info.update(layer.feature.properties);
 
@@ -82,9 +83,6 @@ function hoverListe(e) {
 }
 
 function resetHoverListe(e) {
-  console.log(e.id)
-  let layerAChanger = document.getElementsByClassName(e.id)[0]
-  //layerAChanger.setAttribute("filter", " ");
   $("." + e.id).attr("fill", stockageCouleur);
 
 }
@@ -95,6 +93,7 @@ function resetHighlight(e) {
   let ville = document.getElementById(e.target.feature.properties.nom)
   //console.log(ville)
   ville.style.backgroundColor ='white';
+  ville.style.color ='black'
 }
 
 var geojson;
