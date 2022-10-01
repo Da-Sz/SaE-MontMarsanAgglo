@@ -76,6 +76,7 @@ z-index: 3000;
 
     #cityList {
         margin: auto;
+        grid-template-columns: repeat(3, 2fr);
     }
 }
 
