@@ -24,6 +24,7 @@
       crossorigin=""
     ></script>
   </head>
+
   <body>
     <!--DEBUT HEADER-->
     <div class="imageVille">
@@ -68,13 +69,11 @@
           </div>
         </li>
         <li class="drop">
-          <a href="#">ACTUALITÉ ˅</a>
+          <a href="./news.html">ACTUALITÉ</a>
           <div class="dropdown-content">
-            <a href="#">Archives 2011</a>
-            <a href="#">Archives 2012</a>
-            <a href="#">Archives 2013</a>
-            <a href="#">Archives 2014</a>
-            <a href="#">Archives 2015</a>
+            <a href="#">Actualités</a>
+            <a href="#">Archives</a>
+            <a href="#">Projets en cours</a>
           </div>
         </li>
         <li class="drop">
@@ -148,7 +147,7 @@
         </div>
 
         <div class="buttonContainer">
-          <a href="#" class="allNewsButton">Toutes les actualités</a>
+          <a href="./news.html" class="allNewsButton">Toutes les actualités</a>
         </div>
       </section>
 
@@ -207,8 +206,14 @@
         <div class="titreSection">
           <h2>La carte intéractive</h2>
         </div>
-
-        <div id="map"></div>
+        <div class="mapEtVilles">
+          <div>
+            <ul id="cityList"></ul>
+          </div>
+          <div class="mapContainer">
+            <div id="map"></div>
+          </div>
+        </div>
       </section>
     </div>
 

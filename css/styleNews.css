@@ -7,79 +7,93 @@
 }
 
 .pagePrincipale {
-    background-color: #608CA4;
+    background-color: #f0f0f0;
+    height: 500px;
+    border: 1px solid black;
+
 }
 
-/*.newsRow:after {
-    content: "";
-    display: table;
-    clear: both;
-    margin: 5% 0;
+.newsContainer {
+    display: inline-block;
 }
 
-.newsBox {
-    float: left;
-    width: 33,33%;
-    margin: 0px 50px;
-    display: flex;
+
+.news {
+    max-width: 300px;
+    width: 100%;
     position: relative;
 }
+.news img {
+    max-width: 300px;
+    height: auto;
 
-.newsBox img {
-    max-height: 350px;
-    max-width: 350px;
 }
 
-.newsContent {
-    display: block;
-    background-color: white;
-    padding: 10px;
-    position: absolute;
-    margin: 15%;
-    top: 55%;
-    left: -20%;
+.newsTexte {
     text-align: center;
-}*/
-
-.pagePrincipale {
-    background-color: #608CA4;
-    padding-bottom: 400px;
-
-}
-
-.newsBox {
-    margin-left: 100px;
-}
-
-.newsBox img {
-    width: 350px;
-    height: 350x;
-}
-
-.newsContent {
-    position: relative;
-    width: 270px;
+    padding-top: 1.5em;
     background-color: white;
-    margin-top: -3rem;
-    padding: 1rem 1rem 0 2.2rem;
-    margin-left : -1.4em;
-    height: auto; 
-    border-radius: 10px;
+    
+
+
+    margin-top: -4em;
+    width: 90%;
+    left: 5%;
+
+    aposition: absolute;
+    position: relative;
+
+    top : 0;
+    transition: all 0.6s;
+
+
+    
+
 }
 
-.newsContent:hover {
-    box-shadow: 2px 2px 2px gray;
+.test {
+    overflow: hidden;
+    height: 6.5em;
+    padding-bottom: 1em;
+
+
 }
 
-.newsContent title {
-    font-size: 2rem;
-    font-weight: 300;
-    line-height: 1.2;
+.newsTexte h2 {
+    margin-bottom: 0.5em;
 }
 
-.newsList {
-    padding-top: 150px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 5em;
+.newsTexte p {
+    width: 90%;
+    margin: auto;
+
+    
 }
+
+
+.categorie {
+    color: black;
+    background-color: #608ca4;
+    padding-top: 0.2em;
+    padding-bottom : 0.2em;
+    width: 50%;
+    position: absolute;
+    top : -0.5em;
+
+
+}
+
+
+.news:hover .newsTexte, .news:hover .test {
+    top : -7em;
+    overflow: visible;
+    height: fit-content;
+}
+
+
+
+
+
+
+
+

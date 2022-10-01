@@ -1,12 +1,12 @@
-#map { height: 500px;
-width: 90%;
+#map { height: 550px;
+width: 800px;
 border-radius: 15px;
  }
 
 .mapContainer {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 200px;
+    adisplay: flex;
+    jaustify-content: center;
+    apadding-bottom: 200px;
 }
 
 nav {
@@ -31,3 +31,61 @@ z-index: 3000;
     background-color: transparent;
 }
 
+
+
+ #cityList {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-column-gap: 0.5em;
+    grid-row-gap: 0.5em;
+    width:500px;
+    margin-top: 70px;
+}
+
+#cityList li {
+    text-align: center;
+    display: inline;
+    padding: 1em;
+    border: 1px solid grey;
+
+}
+
+
+#cityList li:hover {
+    color : white !important;
+    background-color: #50C878 !important;
+}
+
+.mapEtVilles {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+@media screen and (max-width : 1300px) {
+    .mapEtVilles {
+        flex-direction: column-reverse;
+        
+    }
+
+    #map {
+        margin: auto;
+    }
+
+    #cityList {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width : 800px) {
+    #cityList {
+        display: none;
+    }
+
+    #map {
+        width: 100%;
+    }
+    
+}

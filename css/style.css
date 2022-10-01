@@ -334,6 +334,7 @@ section {
 
 
 .carreGrid {
+    margin-top: 2em;
     display: grid;
     grid-template-columns: repeat(5, 2fr);
     justify-items: center;
@@ -349,5 +350,14 @@ section {
     background-image: url(../images/dessin.jpg);
     background-position: 150% 10%;
     background-repeat: no-repeat;
-    background-size: ;
+}
+
+
+
+
+
+@media screen and (max-width : 1000px) {
+    .carreGrid {
+        grid-template-columns: repeat(2, 2fr);
+    }
 }

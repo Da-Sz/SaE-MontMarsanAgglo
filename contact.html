@@ -14,7 +14,7 @@
 <!--DEBUT HEADER-->
   <div class="imageVille">
     <div class="logo">
-        <a href=""> <img src="./logoMarsan.png" alt=""></a>
+        <a href="./index.html"><img src="./images/logoMarsan.png" alt=""></a>
     </div>
   </div>
   <nav >
@@ -49,13 +49,11 @@
             <a href="#">Territoire Cyber</a>
             <a href="#">Enquête publique</a>
          </div></li>
-      <li class="drop"><a href="#"  >ACTUALITÉ ˅</a>
+      <li class="drop"><a href="./news.html">ACTUALITÉ</a>
         <div class="dropdown-content">
-          <a href="#">Archives 2011</a>
-          <a href="#">Archives 2012</a>
-          <a href="#">Archives 2013</a>
-          <a href="#">Archives 2014</a>
-          <a href="#">Archives 2015</a>
+          <a href="#">Actualités</a>
+            <a href="#">Archives</a>
+            <a href="#">Projets en cours</a>
        </div>
       </li>
       <li class="drop"><a href="#">S'INFORMER ˅</a>
@@ -104,38 +102,52 @@
 
 
 
-    <div class="sectionContainerActu">
+
       <section class="sectionContact">
-
-        <button id="bouton" class="open-button" onclick="openForm()">Nous écrire</button>
-        <div class="formulaire_popup" id ="myform">
-            <form action="#" method="POST" class="formulaire_container">
-                
-                <button type="button" class="btn_cancel2" onclick="closeForm()">Annuler</button>
-
-                <h1>Contactez nous</h1>
-
-                <label for="email">Nom</label>
-                <input type="text" placeholder="Jean Dupont" name="text" required>
-
-                <label for="email">Email</label>
-                <input type="email" placeholder="jean.dupont@gmail.com" name="email" required>
-
-                <label for="commentaire">Commentaire</label>
-                <textarea rows = "5" cols = "40" name = "description" placeholder="Votre Commentaire"></textarea>
-
-                <button type="submit" class="btn">Envoyer !</button>
-                
-            </form>
+        <div class="titreSection">
+          <h2>Nous contacter</h2>
         </div>
-
-      </div>
 
 
         
+        <form action="">
+          <div>
+            <label for="Nom">Nom</label>
+            <input type="text" placeholder="Jean-Dupont">
+          </div>
+  
+          <div>
+            <label for="mail">Adresse Email</label>
+            <input type="text" placeholder="jean-dupont@gmail.com">
+          </div>
+          <div>
+            <label for="numero">Numero de téléphone</label>
+            <input type="text" placeholder="07...">
+          </div>
+          <div>
+            <label for="catégorie">Votre demande concerne</label>
+            <select name="catégories" id="select-categories">
+              <option value="">Veuillez choisir une option</option>
+            <option value="Déchets">Les déchets</option>
+            <option value="Projets">Les projets</option>
+            <option value="Suggestion">Une suggestion</option>
+            <option value="Aménagements">Les aménagements</option>
+            <option value="Aides">Les Aides</option>
+            <option value="Autre">Autre</option>
+            </select>
+            
+          </div>
+          <div>
+            <label for="demande">Votre demande</label>
+            <input type="text" id="demande">
+          </div>
+
+          <button>Envoyer</button>
+        </form>
+        
        
       </section>
-    </div>
+
     
 
 
@@ -144,17 +156,44 @@
 
 
   </div>
+
+
+  <div class="footerContainer">
+    <div class="section adresse">
+      <h3>L'agglomération</h3>
+
+      <p>
+        575, Av Maréchal Foch <br />
+        BP 70171 <br />
+        4003 Mont de Marsan <br />
+        <a href="">Nous contacter</a>
+      </p>
+    </div>
+
+    <div class="section liste">
+      <h3>En un clic</h3>
+      <ul>
+        <li><a href="#">L'aggo demain</a></li>
+        <li><a href="#">Marchés Publics</a></li>
+        <li><a href="#">Délibérations du conseil</a></li>
+        <li><a href="#">Economie</a></li>
+        <li><a href="#">Immobilier d'entreprises</a></li>
+        <li><a href="#">Réseau TMA</a></li>
+      </ul>
+    </div>
+
+    <div class="section liste">
+      <h3>Offres d'emploi</h3>
+      <ul>
+        <li><a href="#">Du mont de marsan</a></li>
+        <li><a href="#">De l'agglomération</a></li>
+        <li><a href="#">De pôle emploi</a></li>
+      </ul>
+    </div>
+  </div>
   
 
 </body>
 </html>
 
-<script>
-    function openForm() {
-        document.getElementById("myform").style.display = "block";
-    }
 
-    function closeForm() {
-        document.getElementById("myform").style.display = "none";
-    }
-</script>

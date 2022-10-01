@@ -1,0 +1,148 @@
+.sectionUnProjets {
+    max-width: 1500px;
+    width: 100%;
+    borader: 1px solid black;
+    background-color: #f0f0f0;
+}
+
+
+
+body {
+    background-color: #f0f0f0 ;
+}
+
+.sectionUnProjets .titreSection h2 {
+    background-color: #f0f0f0;
+}
+
+.titreSection {
+    margin-bottom: 1.3em;
+}
+
+.grandProjet {
+    width: 100%;
+    background-image: url("../images/pageProjets/grandprojet.jpg");
+    height: 25em;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 2em;
+}
+
+.projet1 {
+    display: block;
+    background-color: #1e7495;
+    width: 400px;
+    padding: 2em 2em 3em 2em;
+    margin-left: 2em;
+    transition: all 0.6s;
+    position: relative;
+    font-size: 1.2em;
+    
+}
+
+.triangle {
+    height: 0;
+    width: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-bottom: 50px solid white;
+    border-left : 50px solid transparent
+}
+
+.projet1:hover {
+    background-color: #960051;
+}
+.projet1 > * {
+    color : white
+}
+
+.projet1 h3 {
+    margin-bottom: 1.4em;
+}
+
+
+.projet {
+    margin-bottom: 3em;
+    background-color: white;
+    display: flex;
+    position: relative;
+    transition: all 0.6s;
+}
+
+.projets {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.projet img {
+}
+
+
+
+.projetTexte {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.projetTexte h3 {
+    color: #1e7495;
+    font-size: 1.7em;
+    margin-bottom: 10px;
+}
+.projetTexte p {
+    font-size: 1.2em;
+    max-height: 155px;
+    overflow: hidden;
+}
+
+
+.projet:hover {
+    background-color: #1e7495;
+}
+.projet:hover h3 {
+    color : white
+}
+.projet:hover .triangle {
+    border-bottom: 50px solid white;
+}
+
+.projetTexte > .triangle {
+    border-bottom: 50px solid #1e7495;
+    border-left : 50px solid transparent
+}
+
+
+
+
+
+@media screen and (max-width : 800px) {
+    .projet {
+        flex-direction: column;
+    }
+
+    .projetTexte {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    
+
+
+}
+
+
+@media screen and (max-width : 1300px) {
+    .sectionUnProjets {
+        width: 90%;
+    }
+
+    .projetTexte p {
+        font-size: 1em;
+        max-height: 1000px;
+
+    }
+
+}

@@ -11,7 +11,7 @@
     <link href="./css/style.css" rel="stylesheet" />
     <link href="./css/styleContact.css" rel="stylesheet" />
     <link href="./css/styleCarte.css" rel="stylesheet" />
-    <link href="./css/styleHeader.css" rel="stylesheet" >
+    <link href="./css/styleHeader.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
@@ -23,13 +23,12 @@
       integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
       crossorigin=""
     ></script>
-    
   </head>
   <body>
     <!--DEBUT HEADER-->
     <div class="imageVille">
       <div class="logo">
-        <a href=""> <img src="./logoMarsan.png" alt="" /></a>
+        <a href=""> <img src="./images/logoMarsan.png" alt="" /></a>
       </div>
     </div>
     <nav>
@@ -69,13 +68,11 @@
           </div>
         </li>
         <li class="drop">
-          <a href="#">ACTUALITÉ ˅</a>
+          <a href="./news.html">ACTUALITÉ</a>
           <div class="dropdown-content">
-            <a href="#">Archives 2011</a>
-            <a href="#">Archives 2012</a>
-            <a href="#">Archives 2013</a>
-            <a href="#">Archives 2014</a>
-            <a href="#">Archives 2015</a>
+            <a href="#">Actualités</a>
+            <a href="#">Archives</a>
+            <a href="#">Projets en cours</a>
           </div>
         </li>
         <li class="drop">
@@ -89,30 +86,21 @@
           </div>
         </li>
       </ul>
-
     </nav>
     <!--FIN HEADER-->
 
     <div class="pagePrincipale">
+      <h2 class="titreSection">Carte intéractive</h2>
 
-          <h2 class="titreSection">Carte intéractive</h2>
-
-          <div class="mapContainer">
-            <div id="map"></div>
-          </div>
-
-
-
-          <div>
-            <ul id="cityList">
-            </ul>
-          </div>
-
+      <div class="mapEtVilles">
+        <div>
+          <ul id="cityList"></ul>
+        </div>
+        <div class="mapContainer">
+          <div id="map"></div>
+        </div>
+      </div>
     </div>
-
-    
-
-    
   </body>
 </html>
 
