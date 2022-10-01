@@ -40,6 +40,7 @@ z-index: 3000;
     grid-row-gap: 0.5em;
     width:500px;
     margin-top: 70px;
+
 }
 
 #cityList li {
@@ -53,7 +54,7 @@ z-index: 3000;
 
 #cityList li:hover {
     color : white !important;
-    background-color: #50C878 !important;
+    background-color: #608ca4 !important;
 }
 
 .mapEtVilles {
@@ -90,7 +91,6 @@ z-index: 3000;
     
 }
 
-
-.Bougue {
-    color : red
+.Geloux {
+    color: red;
 }

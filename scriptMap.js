@@ -1,4 +1,4 @@
-var map = L.map("map", { zoomControl: false, scrollWheelZoom: false, attributionControl: false }).setView([43.9112, -0.4913], 11);
+var map = L.map("map", { zoomControl: false, scrollWheelZoom: false, attributionControl: false, doubleClickZoom : false, }).setView([43.9112, -0.4913], 11);
 map.dragging.disable();
 // var tiles = L.tileLayer(
 //   "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
@@ -70,18 +70,22 @@ function highlightFeature(e) {
 
 }
 
-
+var stockageCouleur;
 function hoverListe(e) {
-  console.log(e.id)
   let layerAChanger = document.getElementsByClassName(e.id)[0]
-  layerAChanger.setAttribute("filter", 'invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%)');
+  //layerAChanger.setAttribute("filter", 'invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%)');
+
+  stockageCouleur = $("." + e.id).attr("fill");
+  $("." + e.id).attr("fill", "#608ca4");
+
 
 }
 
 function resetHoverListe(e) {
   console.log(e.id)
   let layerAChanger = document.getElementsByClassName(e.id)[0]
-  layerAChanger.setAttribute("filter", " ");
+  //layerAChanger.setAttribute("filter", " ");
+  $("." + e.id).attr("fill", stockageCouleur);
 
 }
 
@@ -165,3 +169,4 @@ window.onload = function() {
     .sort((a, b) => a.textContent.localeCompare(b.textContent))
     .forEach(li => ul.appendChild(li));
 }
+
