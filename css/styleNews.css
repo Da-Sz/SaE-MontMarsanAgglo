@@ -1,121 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
 * {
-    padding: 0%;
-    margin: 0%;
     font-family: 'Roboto Condensed', sans-serif;
     text-decoration: none;
     list-style: none;
 }
 
-
-.pagePrincipale {
-    height: 800px;
-    border: 1px solid black;
-
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-.news {
-    max-width: 300px;
-    width: 100%;
-    position: relative;
-}
-.news img {
-    max-width: 300px;
-    width: 100%;
-    height: auto;
+/*body {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}*/
 
-}
-
-.newsTexte {
-    text-align: center;
-    padding-top: 1.5em;
-    background-color: white;
-    
-
-
-
-    width: 90%;
-    left: 5%;
-
-
-    position: absolute;
-
-    top : 80%;
-    transition: all 0.6s;
-
-
-    
-
+.gridContainer {
+    amargin-top: 50px;
+    display: grid;
+    place-items: center;
+    ;
 }
 
-.animation {
-    overflow: hidden;
-    height: 6.5em;
-    padding-bottom: 1em;
-
-
-
+.pagePrincipaleNews {
+    background-color:rgb(240, 240, 240)
 }
 
-.newsTexte h2 {
-    margin-bottom: 0.5em;
-}
-
-.newsTexte p {
-    width: 90%;
-    margin: auto;
-
-    
-}
-
-
-.categorie {
-    color: black;
-    background-color: #608ca4;
-    padding-top: 0.2em;
-    padding-bottom : 0.2em;
-    width: 50%;
-    position: absolute;
-    top : -0.5em;
-
-
-}
-
-
-.news:hover .newsTexte, .news:hover .animation {
-    overflow : visible ;
-    top: 20%;
-    height: fit-content;
-
-}
-
- .news:hover .newsTexte {
-
- }
-
- 
-
- .listeNews {
+.container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap : 4em
- }
+    max-width: 1200px;
+    margin-block: 2rem;
+    gap: 2rem;
+}
 
-.titreSection {
-    margin-bottom: 50px;
+.cardHeading img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.newsCard {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+    width: clamp(20rem, calc(20rem + 2vw), 22rem);
+    overflow: hidden;
+    background: white;
+}
+
+.cardType {
+    align-self: flex-start;
+    font-size: .75rem;
+    background: #608ca4;
+    color : white;
+    padding: 0.5em 1em;
+}
+
+.cardBody {
+    flex-direction: column;
+    gap: .5rem;
+    padding: 1.2rem;
+    display: flex;
+}
+
+.cardBody h4 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.cardBody p,h4,span {
+    font-family: "Sora", sans-serif;
 }
 
 
-
-.sectionUnActu {
-    background-color: #f0f0f0;
-    height: 600px;
-}
-
-.sectionUnActu .titreSection h2 {
-    background-color: #f0f0f0;
-
-}
-
-.sectionUnContainer {
-    background-color: #f0f0f0;
+.titreSection > *, .titreSection {
+    padding-top: 1em;
+    background-color: rgb(240, 240, 240) !important;
 }

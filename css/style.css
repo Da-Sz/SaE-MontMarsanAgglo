@@ -361,4 +361,16 @@ section {
     .carreGrid {
         grid-template-columns: repeat(2, 2fr);
     }
+
+
+    .sectionUn {
+        background-image: none;
+    }
+
+    .grosseImageContainer {
+        flex-direction: column;
+    }
+    .carreTexte {
+        margin: auto;
+    }
 }

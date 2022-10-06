@@ -1,0 +1,113 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+
+.news {
+    max-width: 300px;
+    width: 100%;
+    position: relative;
+}
+.news img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+
+}
+
+.newsTexte {
+    text-align: center;
+    padding-top: 1.5em;
+    background-color: white;
+    width: 90%;
+    left: 5%;
+
+
+    position: absolute;
+
+    top : 80%;
+    transition: all 0.6s;
+
+
+    
+
+}
+
+.animation {
+    overflow: hidden;
+    height: 6.5em;
+    padding-bottom: 1em;
+
+
+
+}
+
+.newsTexte h2 {
+    margin-bottom: 0.5em;
+}
+
+.newsTexte p {
+    width: 90%;
+    margin: auto;
+
+    
+}
+
+
+.categorie {
+    color: black;
+    background-color: #608ca4;
+    padding-top: 0.2em;
+    padding-bottom : 0.2em;
+    width: 50%;
+    position: absolute;
+    top : -0.5em;
+
+
+}
+
+
+.news:hover .newsTexte, .news:hover .animation {
+    overflow : visible ;
+    top: 20%;
+    height: fit-content;
+
+}
+
+ .news:hover .newsTexte {
+
+ }
+
+ 
+
+ .listeNews {
+    display: flex;
+    justify-content: center;
+    gap : 4em;
+    margin-bottom: 8em;
+ }
+
+.titreSection {
+    margin-bottom: 50px;
+}
+
+
+
+@media screen and (max-width : 1000px) {
+    .listeNews {
+        flex-direction: column;
+        margin-bottom: 5em;
+    }
+    .listeNews a {
+        margin: auto;
+        margin-bottom: 3em;
+    }
+    
+
+}
