@@ -370,7 +370,16 @@ section {
     .grosseImageContainer {
         flex-direction: column;
     }
+
+    .grosseImageContainer img {
+        margin-inline: 1em;
+    }
     .carreTexte {
+        margin: auto;
+    }
+
+    .carreGrid {
+        width: 70%;
         margin: auto;
     }
 }
