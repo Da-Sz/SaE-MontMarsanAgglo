@@ -74,3 +74,19 @@ function loadCards() {
         }
     })
 }
+
+function recherche(mot) {
+    var cards = document.getElementsByClassName("newsCard");
+    for (let i = 0 ; i < cards.length ; i++) {
+        if (cards[i].textContent.toUpperCase().indexOf (mot) == -1) {
+            cards[i].style.display = "none";
+        }
+    }
+}
+
+var bouton = document.getElementById("boutonRecherche")
+var input = document.getElementById("input")
+bouton.onclick = function() {
+    //console.log(input.value)
+    recherche(input.value.toUpperCase())
+}
