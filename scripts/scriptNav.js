@@ -10,19 +10,18 @@ boutonFermer.onclick = fermerNav
 
 function ouvrirNav() {
     nav.style.display = "flex"
-    nav.classList.remove('testtt')
+    nav.classList.remove('fermetureNav')
+
 }
 
 function fermerNav() {
-    nav.classList.add('testtt')
+    nav.classList.add('fermetureNav')
 }
 
 
 
   var liste = document.getElementsByClassName("dropdown-content");
-  for (let i = 0; i < liste.length; i++) {
-    liste[i].style.display = "none";
-  }
+
   document.getElementById("nav1").addEventListener("click", function () {
     ouvrir("drop1");
   });
@@ -40,11 +39,16 @@ function fermerNav() {
 
   function ouvrir(drop) {
     var dropMenu = document.getElementById(drop);
-    if (dropMenu.style.display == "none") {
-      dropMenu.style.display = "flex";
-    } else {
-      dropMenu.style.display = "none";
+    if (window.innerWidth < 800) {
+      if (dropMenu.classList.contains("responsiveFlex")) {
+        dropMenu.classList.remove("responsiveFlex");
+      }
+      else {
+        dropMenu.classList.add("responsiveFlex");
+      }
     }
+    
+    
   }
 
 

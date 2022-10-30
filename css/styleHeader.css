@@ -198,8 +198,13 @@ nav ul li a {
         display: none;
     }
 
+    #openBtn {
+        display: flex;
+        justify-content: center;
+    }
     .burger-icon {
-        display: block;
+        display: inline;
+        justify-self: center;
     }
 
     .close {
@@ -209,10 +214,31 @@ nav ul li a {
         font-size: 3em;
       }
 
-    .testtt {
+    .fermetureNav {
         display: none !important;
+    }
+
+    .responsiveFlex {
+        display: flex;
     }
     
 
 }
 
+@media screen and (max-width : 1100px) {
+    nav ul li {
+        padding-inline: 10px;
+    }
+    
+
+
+}
+
+@media (min-width:800px) and (max-width:1100px) {
+    .dropdown-content {
+        margin-left: -10px;
+    }
+    nav ul li a {
+        font-size: 1.3rem;
+    }
+}
