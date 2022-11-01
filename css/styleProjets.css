@@ -21,7 +21,9 @@ body {
 
 .grandProjet {
     width: 100%;
-    background-image: url("../images/pageProjets/grandprojet.jpg");
+    background-image: url("../images/pageProjets/grandProjet2.jpg");
+    background-size: cover;
+    background-position: bottom;
     height: 25em;
     display: flex;
     align-items: center;

@@ -1,39 +1,53 @@
 const news = 
 [
     {
-        "title": "La Classe des 18 ans reprend du service !",
-        "type": "",
-        "imagesrc": "",
-        "description": "Si depuis février 2020, la Classe des 18 ans - projet initié par le Pôle Jeunesse de Mont de Marsan Agglo - est impactée par le contexte sanitaire, la promotion 2004 a décidé de relancer les activités pour permettre aux jeunes du territoire de se retrouver autour de moments festifs et conviviaux."
+        "title": "Présentation du Projet Global de Territoire de Mont de Marsan Agglo",
+        "type": "Projet",
+        "imagesrc": "./images/pageNews/actu1.jpg",
+        "description": "Territoire familial par essence, l'agglomération montoise est attractive pour les jeunes ménages. Mont de Marsan Agglo et ses partenaires se sont donc engagés avec enthousiasme et détermination dans la construction d'un projet global de territoire (PGT) pour les 0-30 ans. Au terme d'un long travail partenarial et participatif, le projet de PGT"
     },
     
     {
-        "title": "La Classe des 18 ans reprend du service !",
-        "imagesrc": "",
-        "type": "",
-        "description": "Si depuis février 2020, la Classe des 18 ans - projet initié par le Pôle Jeunesse de Mont de Marsan Agglo - est impactée par le contexte sanitaire, la promotion 2004 a décidé de relancer les activités pour permettre aux jeunes du territoire de se retrouver autour de moments festifs et conviviaux."
+        "title": "Rencontre avec une virtuose de la couleur",
+        "imagesrc": "./images/pageNews/actu2.jpg",
+        "type": "Rencontre",
+        "description": "Du 22 octobre au 12 novembre, la coloriste Isabelle Merlet expose ses couleurs à la médiathèque et vous emporte dans l'univers des albums de bande dessinée comme jamais vous ne les avez perçus."
     },
     
     {
-        "title": "Adaptation des services municipaux et communautaires aux nouvelles mesures sanitaires",
+        "title": "La bougeothèque, espace de motricité libre pour les tout-petits",
         "type": "",
-        "imagesrc": "",
-        "description": "En raison de la dégradation du contexte sanitaire, de nouvelles mesures sanitaires sont mises en place sur le territoire jusqu'au 3 février.\nSi les services municipaux et communautaires restent ouverts au grand public, certains adaptent leurs horaires."
+        "imagesrc": "./images/pageNews/actu3.jpg",
+        "description": "Terrain de découverte et d'apprentissage, la bougeothèque repose sur le concept de motricité libre des enfants, en les laissant explorer librement et à leur rythme leur environnement, dans un cadre sécurisé et adapté. Entrée libre et gratuite."
     },
 
     {
-        "title": "La Classe des 18 ans reprend du service !",
+        "title": "La Médiathèque du Marsan, le Liban à l'affiche du Mois du doc",
         "type": "",
-        "imagesrc": "",
-        "description": "Si depuis février 2020, la Classe des 18 ans - projet initié par le Pôle Jeunesse de Mont de Marsan Agglo - est impactée par le contexte sanitaire, la promotion 2004 a décidé de relancer les activités pour permettre aux jeunes du territoire de se retrouver autour de moments festifs et conviviaux."
+        "imagesrc": "./images/pageNews/actu4.jpg",
+        "description": "Dans le cadre du Mois du film documentaire, la Médiathèque du Marsan propose un voyage au Liban, à travers deux films documentaires qui constituent deux beaux objets cinématographiques."
     },
 
     {
-        "title": "La Classe des 18 ans reprend du service !",
-        "type": "",
-        "imagesrc": "",
-        "description": "Si depuis février 2020, la Classe des 18 ans - projet initié par le Pôle Jeunesse de Mont de Marsan Agglo - est impactée par le contexte sanitaire, la promotion 2004 a décidé de relancer les activités pour permettre aux jeunes du territoire de se retrouver autour de moments festifs et conviviaux."
+        "title": "Présentation du Projet Global de Territoire de Mont de Marsan Agglo",
+        "type": "Territoire",
+        "imagesrc": "./images/pageNews/actu5.jpg",
+        "description": "Territoire familial par essence, l'agglomération montoise est attractive pour les jeunes ménages. Mont de Marsan Agglo et ses partenaires se sont donc engagés avec enthousiasme et détermination dans la construction d'un projet global de territoire (PGT) pour les 0-30 ans. Au terme d'un long travail partenarial et participatif, le projet de PGT... "
+    },
+    {
+        "title": "Les Campulsations débarquent à Mont de Marsan !",
+        "type": "Festival",
+        "imagesrc": "./images/pageNews/actu6.jpg",
+        "description": 'Pour son édition 2022, le festival "Les campulsations" fait halte à Mont de Marsan le 29 septembre prochain, au marché Saint-Roch ( initialement prévu place de la mairie). L\'occasion pour les étudiants montois de se rassembler et de créer des liens dans une ambiance festive.'
+    },
+    {
+        "title": "Reprise des ateliers informatique",
+        "type": "Communauté",
+        "imagesrc": "./images/pageNews/actu7.jpg",
+        "description": "Les ateliers informatique reprennent à la Plateforme Sociale du Marsan. Prochain rendez-vous mardi 13 septembre à 10h30. Gratuits et ouverts à tous, sur inscription, ces ateliers visent à lutter contre l'exclusion numérique en proposant d'explorer par petit groupe les technologies numériques de manière ludique et pédagogique."
     }
+
+
     
 ];
 
