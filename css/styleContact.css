@@ -1,6 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+    border-collapse: collapse;
+}
+
 .texteEtMap {
     margin: 50px 0 50px 0;
     display: flex;
+    justify-content: center;
 }
 
 .sectionContact h3 {
@@ -16,6 +23,22 @@
     max-width: 600px;
     max-height: 300px;
     margin: 0 auto;
+}
+
+@media screen and (max-width : 1000px ) {
+    .texteEtMap {
+        flex-direction: column;
+    }
+
+    .mapGoogle iframe {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .mapGoogle {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 /* CSS POUR FORMULAIRE */
@@ -76,4 +99,61 @@ textarea {
 .sendBtn:hover {
     color: white;
     background-color: #1e7495;
+}
+
+/* FIN FORMULAIRE */
+
+/* PARTIE VISITE */
+.visite {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width : 1000px) {
+    .visite {
+        flex-direction: column;
+    }
+
+    .visite h5 {
+        margin-block: 1em 0.2em;
+    }
+}
+
+.visite h5, .adresse h4 {
+    color: #da196c;
+    font-size: 2em;
+    font-weight: bold;
+    
+}
+
+.titreVisite, .titreNumero {
+    color : #8e8f91;
+    font-size : 2em;
+    margin-bottom: 0.7em;
+
+}
+
+.visite a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.sectionContact {
+    max-width: 80%;
+    margin: auto;
+}
+
+/* FIN PARTIE VISITE */
+
+table tr, table td, table th {
+    border : 1px solid black
+}
+
+table td, table th {
+    padding: 0.3em 1em;
+}
+
+.tableNumero {
+    display: flex;
+    justify-content: center;
 }
