@@ -11,6 +11,7 @@
     <link href="./css/styleNews.css" rel="stylesheet" />
     <link href="./css/styleHeader.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="icon" href="./favicon-agglo.jpg" />
 
     <script
@@ -94,12 +95,13 @@
     </a>
     <!--FIN HEADER-->
 
-    <div class="rechercheContainer">
-      <div class="recherche">
-        <input  id="input" placeholder="rechercher un article"></input>
-        <button id="boutonRecherche">Recherche</button>
-      </div>
+    <!--SEARCH BAR-->
+    <div class="searchBar">
+      <label for="searchQuery">Rechercher une actualité :</label>
+      <input type="text" id="searchQueryI" name="searchQuery" minlength="4" maxlength="50" size="15">
+      <button id="searchBtn"><i class="fa fa-search"></i></button>
     </div>
+    <!---->
 
     <div class="pagePrincipaleNews">
       <div class="titreSection">

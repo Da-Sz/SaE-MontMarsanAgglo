@@ -75,17 +75,26 @@ function loadCards() {
     })
 }
 
+document.querySelector("#searchQueryI").addEventListener("keyup", event => {
+    if(event.key !== "Enter") return; // Use `.key` instead.
+    document.querySelector("#searchBtn").click();
+    event.preventDefault(); // No need to `return false;`.
+});
+
 function recherche(mot) {
     var cards = document.getElementsByClassName("newsCard");
+
     for (let i = 0 ; i < cards.length ; i++) {
-        if (cards[i].textContent.toUpperCase().indexOf (mot) == -1) {
+        if((mot.trim()).length == 0) {
+            cards[i].style.display = "block";
+        } else if (cards[i].textContent.toUpperCase().indexOf (mot) == -1) {
             cards[i].style.display = "none";
         }
     }
 }
 
-var bouton = document.getElementById("boutonRecherche")
-var input = document.getElementById("input")
+var bouton = document.getElementById("searchBtn");
+var input = document.getElementById("searchQueryI");
 bouton.onclick = function() {
     //console.log(input.value)
     recherche(input.value.toUpperCase())

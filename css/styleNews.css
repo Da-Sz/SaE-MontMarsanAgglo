@@ -85,32 +85,16 @@
 }
 
 
-.rechercheContainer {
-    background-color: #d0c3bd;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.searchBar {
+    margin: 40px 0;
+    text-align: center;
 }
 
-
-.recherche {
-    display: flex;
+#searchBtn, label[for="searchQuery"], input[id="searchQueryI"] {
+    font-size: 25px;
 }
 
-.recherche input {
-height: 3em;
-margin-right: 1em;
-align-self: center;
-width: 200px;
-}
-.recherche button {
-    background-color: white;
-    padding: 1em;
-}
-
-.recherche button:hover {
-    background-color: #608ca4;
-    color: white;
-    cursor: pointer;
+#searchQueryI {
+    margin-right: 10px;
 }
