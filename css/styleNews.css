@@ -83,3 +83,18 @@
     padding-top: 1em;
     background-color: rgb(240, 240, 240) !important;
 }
+
+
+
+.searchBar {
+    margin: 40px 0;
+    text-align: center;
+}
+
+#searchBtn, label[for="searchQuery"], input[id="searchQueryI"] {
+    font-size: 25px;
+}
+
+#searchQueryI {
+    margin-right: 10px;
+}

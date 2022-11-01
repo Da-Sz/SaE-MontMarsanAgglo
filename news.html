@@ -9,26 +9,31 @@
     />
     <title>Mont de Marsan | News</title>
     <link href="./css/styleNews.css" rel="stylesheet" />
-    <link href="./css/styleHeader.css" rel="stylesheet" >
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="./favicon-agglo.jpg">
+    <link href="./css/styleHeader.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="icon" href="./favicon-agglo.jpg" />
 
-    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-    <script src="./news.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+
   </head>
-  
+
   <body>
     <!--DEBUT HEADER-->
     <div class="imageVille">
       <div class="logo">
-        <a href='./index.html'> <img src="./images/logoMarsan.png" alt="" /></a>
+        <a href="./index.html"> <img src="./images/logoMarsan.png" alt="" /></a>
       </div>
     </div>
     <nav id="nav">
       <ul class="oui">
         <li class="agglo drop">
-          <a href="#">L'AGGLO ˅</a>
-          <div class="dropdown-content dropGreen">
+          <a href="#" id="nav1">L'AGGLO ˅</a>
+          <div class="dropdown-content dropGreen" id="drop1">
             <a href="#">Outils de planification</a>
             <a href="#">Grands projets structurants</a>
             <a href="#">Infrastructures performantes</a>
@@ -37,8 +42,8 @@
           </div>
         </li>
         <li class="drop">
-          <a href="#">COMPÉTENCES ˅</a>
-          <div class="dropdown-content">
+          <a href="#" id="nav2">COMPÉTENCES ˅</a>
+          <div class="dropdown-content" id="drop2">
             <a href="#">Action sociale</a>
             <a href="#">Voirie</a>
             <a href="#">Aménagement</a>
@@ -51,8 +56,8 @@
           </div>
         </li>
         <li class="drop">
-          <a href="#">DEMAIN ˅</a>
-          <div class="dropdown-content">
+          <a href="#" id="nav3">DEMAIN ˅</a>
+          <div class="dropdown-content" id="drop3">
             <a href="#">Outils de planification</a>
             <a href="#">Grands projets structurants</a>
             <a href="#">Infrastructures performantes</a>
@@ -69,8 +74,8 @@
           </div>
         </li>
         <li class="drop">
-          <a href="#">S'INFORMER ˅</a>
-          <div class="dropdown-content">
+          <a href="#" id="nav4">S'INFORMER ˅</a>
+          <div class="dropdown-content" id="drop4">
             <a href="#">Parcours santé</a>
             <a href="#">Journal</a>
             <a href="#">Infos utiles</a>
@@ -79,27 +84,39 @@
           </div>
         </li>
       </ul>
-
+      <a id="closeBtn" href="#" class="close">×</a>
     </nav>
+    <a href="#" id="openBtn">
+      <span class="burger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </a>
     <!--FIN HEADER-->
 
-
+    <!--SEARCH BAR-->
+    <div class="searchBar">
+      <label for="searchQuery">Rechercher une actualité :</label>
+      <input type="text" id="searchQueryI" name="searchQuery" minlength="4" maxlength="50" size="15">
+      <button id="searchBtn"><i class="fa fa-search"></i></button>
+    </div>
+    <!---->
 
     <div class="pagePrincipaleNews">
-      
-
       <div class="titreSection">
         <h2>Actualités</h2>
       </div>
-      
+
       <div class="gridContainer">
-        
         <div class="container">
           <!--AUTO GENERATED CARDS-->
         </div>
-          
       </div>
     </div>
-    
   </body>
 </html>
+
+
+<script src="./scripts/news.js"></script>
+<script src="./scripts/scriptNav.js"></script>
