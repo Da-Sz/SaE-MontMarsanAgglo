@@ -260,6 +260,16 @@ section {
         max-width: 800px;
         margin: auto;
     }
+
+    .carreTexte {
+        border : none;
+        margin-top: 1em;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 5rem 4rem;
+    }
+
+    .
 }
 
 
@@ -373,9 +383,6 @@ section {
 
     .grosseImageContainer img {
         margin-inline: 1em;
-    }
-    .carreTexte {
-        margin: auto;
     }
 
     .carreGrid {
